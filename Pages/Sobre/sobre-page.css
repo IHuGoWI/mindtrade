@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-font: 'Poppins'; 
+    --primarycolor: #2e55e9;
+    --secondcolor: #00d8ff;
+    --primaryTextColor: #fff;
+    --boxesColor: #25283d;
+    --bgBoxesColor: #131325;
+    --bgRecentsCont: #131325ca; 
+    --mainbox: #090E1A;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../Index/IMG/Imgs/background.png);
+    background-size: cover;
+}
+
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 60px;
+    width: 1800px;
+    margin: 300px 0 300px 0;
+    padding: 100px;
+    background: var(--bgRecentsCont);
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    box-shadow: 1px 1px 100px 5px #00000067;
+}
+
+.mainCont > h1 {
+    color: var(--primaryTextColor);
+    font-size: 80px;
+}
+
+.mainCont > h2 {
+    color: var(--primaryTextColor);
+    font-size: 60px;
+}
+
+.mainCont > p {
+    color: #7d818b;
+    font-size: 30px;
+}
+
+.mainCont > img {
+    position: relative;
+    margin: -180px 0 0 -1300px;
+    height: 300px;
+    width: 300px;
+}
+
+.fundators {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 50px; 
+    margin: 70px 0 50px 0;
+}
+
+.fundators > img {
+    height: 300px;
+    border-radius: 50%;
+}

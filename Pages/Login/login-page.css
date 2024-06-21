@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-font: 'Poppins';
+    --mainbox: #ffffff;
+    --secondBox: #0f091a;
+    --box-color: #8f8f8f54;
+    --textColor: #000000;
+    --secondtextcolor: #434343;
+    --primarycolor: #2e55e9;
+    --secondcolor: #00E9EA;
+    --hoverColor: #2e55e9;  
+    --iconColor: #353535;
+    --inputColor: 
+    #303030;   
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondBox);
+    border-radius: 40px;
+    box-shadow: 1px 1px 120px 2px #0000005b;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondBox);
+    height: 700px;
+    width: 600px;
+    border-radius: 40px 0 0 40px;
+    
+}
+
+.students {
+    height: 500px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 700px;
+    width: 500px;
+    /*padding: 80px 50px;*/
+    border-radius: 40px 40px 40px 40px;
+    background-color: var(--mainbox);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.text > h1 {
+    color: var(--secondtextcolor);
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.text > p {
+    color: var(--secondtextcolor);
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    height: 45px;
+    padding: 0 0 0 12px;
+    border-radius: 8px;
+    background-color: var(--box-color);
+}
+
+.email i {
+    color: var(--iconColor);
+    font-size: 14px;
+}
+
+.email > form > input {
+    width: calc(400px - 14px - 12px - 10px);
+    height: 35px;
+
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--inputColor);
+    border: none;
+    outline: none;
+}
+
+.email > form > input::placeholder {
+    color: #a9a9a9;
+    background-color: transparent;
+}
+
+.password {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    height: 45px;
+    padding: 0 0 0 12px;
+    border-radius: 8px;
+    background-color: var(--box-color);
+}
+
+.password i {
+    color: var(--iconColor);
+    font-size: 14px;
+}
+
+.password > form > input {
+    width: calc(400px - 14px - 12px - 10px);
+    height: 35px;
+
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--inputColor);
+    border: none;
+    outline: none;
+}
+
+.password > form > input::placeholder {
+    color: #a9a9a9;
+    background-color: transparent;
+}
+
+.adversiments {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+    padding: 0 0 0 0;
+    color: var(--secondtextcolor);
+    font-size: 14px;
+}
+
+.loginBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainbox);
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, #00E9EA, #2e55e9);
+    margin: 15px 0 45px 0;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.loginBtn:hover {
+    transform: scale(108%);
+}
+
+#remember {
+    font-weight: 500;
+}
+
+#forgot {
+    color: var(--secondtextcolor);
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+#forgot:hover {
+    color: var(--hoverColor);
+}
+
+.signIn {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 10px 0;
+}
+
+.signIn > p {
+    color: var(--secondtextcolor);
+}
+
+.aSignIn {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--secondcolor);
+    transition: .3s;
+}
+
+.aSignIn:hover {
+    color: var(--hoverColor);
+}
+
+.orLines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: var(--secondtextcolor);
+}
+
+.linha {
+    width: 130px;
+    height: 1px;
+    background-color: var(--secondtextcolor);
+}
+
+.otherSign {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 15px 0 0 0;
+
+}
+
+.google-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 45px;
+    gap: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid var(--box-color);
+    transition: .3s;
+}
+
+.google-icon {
+    height: 26px;
+}
+
+.google {
+    color: var(--secondtextcolor);
+    text-decoration: none;
+}
+
+.google-cont:hover {
+    transform: scale(108%);
+}
+
+.facebook-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 45px;
+    gap: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid var(--box-color);
+    transition: .3s;
+}
+
+.facebook-icon {
+    height: 26px;
+}
+
+.facebook {
+    color: var(--secondtextcolor);
+    text-decoration: none;
+}
+
+.facebook-cont:hover {
+    transform: scale(108%);
+}
+
